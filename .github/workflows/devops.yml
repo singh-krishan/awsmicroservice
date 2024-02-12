@@ -20,6 +20,7 @@ jobs:
         make lint
     - name: Test with pytest
       run: |
+        python -m textblob.download_corpora
         make test
     - name: Format code
       run: |
