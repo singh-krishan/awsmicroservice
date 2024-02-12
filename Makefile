@@ -17,4 +17,4 @@ test:
 	python -m pytest -vv --cov=mylib --cov=main test_*.py 
 deploy:
 	#deploy
-all: install lint test deploy
+all: install format build lint test deploy
